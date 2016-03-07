@@ -1,0 +1,53 @@
+h1{
+  font-family: 'Shadows Into Light', cursive;
+}
+.about{
+  color:white;
+  background:url(../images/first-section.jpg);
+  background-size: cover;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.education {
+  background-color: #FFFFFB;
+  text-align: center;
+}
+
+.slide{
+  background-color:white;
+  text-align: center;
+}
+
+.slide-1{
+  color:white;
+  background:url(../images/slide-1.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.slide-2{
+  color:white;
+  background:url(../images/slide-2.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.slide-3{
+  color:white;
+  background:url(../images/slide-3.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.fav{
+  background-color:white;
+  text-align: center;
+}
+.contact{
+  color:white;
+  background:url(../images/three-section.jpg);
+  background-size: cover;
+  text-align: center;
+}
