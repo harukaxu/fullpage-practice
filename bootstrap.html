@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/index.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
+  </head>
+  <body>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-inverse home-navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HARUKA</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">会员 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">充值</a></li>
+                <li><a href="#">特权</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">SignIn</a></li>
+            <li><a href="#">SignUp</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <h1>Hello</h1>
+      <p>I was wondering if after all these years you'd like to meet</p>
+      <div id="slides">
+        <img src="images/index1.jpg">
+        <img src="images/index2.jpg">
+        <img src="images/index3.jpg">
+        <img src="images/slide-3.jpg">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <table class="table table-hover nth-child">
+          <tr>
+            <td class="info"><h3>姓名</h3></td>
+          </tr>
+          <tr>
+            <td class="success"><h3>出生年月</h3></td>
+          </tr>
+          <tr>
+            <td class="warning"><h3>性别</h3></td>
+          </tr>
+          <tr>
+            <td class="danger"><h3>籍贯</h3></td>
+          </tr>
+          <tr>
+            <td class="active"><h3>专业</h3></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-9">
+        <table class="table table-hover nth-child">
+          <tr>
+            <td class="info"><h3>徐瑶</h3></td>
+          </tr>
+          <tr>
+            <td class="success"><h3>1995年8月</h3></td>
+          </tr>
+          <tr>
+            <td class="warning"><h3>女</h3></td>
+          </tr>
+          <tr>
+            <td class="danger"><h3>河南省郑州市</h3></td>
+          </tr>
+          <tr>
+            <td class="active"><h3>计算机多媒体</h3></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function(){
+      $("#slides").slidesjs({
+        pagination: {
+          active: false,
+          effect: "slide"
+        },
+        navigation: {
+          active: false
+        },
+        play: {
+          active: true,
+            // [boolean] Generate the play and stop buttons.
+            // You cannot use your own buttons. Sorry.
+          effect: "fade",
+            // [string] Can be either "slide" or "fade".
+          interval: 2500,
+            // [number] Time spent on each slide in milliseconds.
+          auto: true,
+            // [boolean] Start playing the slideshow on load.
+          swap: true,
+            // [boolean] show/hide stop and play buttons
+          pauseOnHover: false,
+            // [boolean] pause a playing slideshow on hover
+          restartDelay: 2500
+            // [number] restart delay on inactive slideshow
+        }
+      });
+      });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+body{
+  background-image: url(../images/index.jpg);
+  background-size: cover;
+}
+
+.home-navbar {
+  margin-top: 50px;
+}
+
+#slides {
+  display:none;
+}
+
+.slidesjs-previous{
+  font-size: 50px;
+}
+
+.slidesjs-next{
+  text-align: right;
+  font-size: 50px;
+}
+
+img{
+  background-size: cover;
+}
+
+.navbar-right{
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.admin-nav-stacked{
+margin-left:20px;
+}
+
+.container{
+  text-align: center;
+}
+
+.jumbotron{
+  text-align: left;
+  font-family: 'Shadows Into Light', cursive;
+}
